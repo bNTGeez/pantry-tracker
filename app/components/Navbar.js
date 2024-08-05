@@ -27,9 +27,6 @@ const Navbar = () => {
             <ListItem>
               <Link href="/add-items">Add Items</Link>
             </ListItem>
-            <List Item>
-              <Link href="/pantry-list-items">Pantry List Items</Link>
-            </List>
           </List>
         </nav>
       </Drawer>

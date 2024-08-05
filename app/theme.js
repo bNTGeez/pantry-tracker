@@ -1,8 +1,9 @@
-"use client";
+'use client'
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-  palette: {},
+  palette: {
+  },
   typography: {
     h1: {
       fontSize: "2.5rem",

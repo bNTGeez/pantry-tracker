@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import theme from "./theme.js"
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme, { globalStyles } from "./theme.js";
+
 // components
 
 import Navbar from "./components/Navbar.js";
@@ -16,7 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider theme = {theme}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          {globalStyles}
           <Navbar />
           {children}
         </ThemeProvider>
